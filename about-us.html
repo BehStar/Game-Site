@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header-style.css" />
+    <link rel="stylesheet" href="css/about-us.css" />
+    <link rel="stylesheet" href="css/footer-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Beh star's Site</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo-header">
+          <a href="index.html">GameStation</a>
+        </div>
+        <ul class="menu-header">
+          <li class="index-page">
+            <a
+              href="index.html"
+              onmousedown="this.classList.add('btn-clicked')"
+              onmouseout="this.classList.remove('btn-clicked')"
+              >Home</a
+            >
+          </li>
+          <li class="about-page">
+            <a
+              href="about-us.html"
+              onmousedown="this.classList.add('btn-clicked')"
+              onmouseout="this.classList.remove('btn-clicked')"
+              >About Us</a
+            >
+          </li>
+          <li class="contact-page">
+            <a
+              href="contact-us.html"
+              onmousedown="this.classList.add('btn-clicked')"
+              onmouseout="this.classList.remove('btn-clicked')"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <i class="fa fa-user"></i>
+            <span class="user-exist">User beni</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-page">
+        <div class="box-form">
+          <div class="select-kind">
+            <div class="login-btn">login</div>
+            <div class="register-btn">register</div>
+            <div class="btn"></div>
+          </div>
+          <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google"></i>
+          </div>
+          <form class="login-form">
+            <input
+              type="text"
+              placeholder="enter username"
+              class="inp-name-log"
+            />
+            <input
+              type="password"
+              placeholder="enter password"
+              class="inp-pass-log"
+            />
+            <div class="check-row">
+              <input type="checkbox" id="rem-pass" />
+              <label for="rem-pass">remember password</label>
+            </div>
+            <button
+              class="btn-login"
+              onmousedown="this.classList.add('btn-clicked')"
+              onmouseout="this.classList.remove('btn-clicked')"
+            >
+              Login
+            </button>
+          </form>
+          <form class="registery-form">
+            <input
+              type="text"
+              placeholder="enter username"
+              class="inp-name-reg"
+            />
+            <input
+              type="text"
+              placeholder="enter email"
+              class="inp-email-reg"
+            />
+            <input
+              type="password"
+              placeholder="enter password"
+              class="inp-pass-reg"
+            />
+            <div class="check-row">
+              <input type="checkbox" name="" id="agree-condition" />
+              <label for="agree-condition"
+                >I agree to the term & condition</label
+              >
+            </div>
+            <button
+              class="btn-register"
+              onmousedown="this.classList.add('btn-clicked')"
+              onmouseout="this.classList.remove('btn-clicked')"
+            >
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="up-page">
+        <div class="container">
+          <article class="description">
+            <section class="title-gameStation">
+              <h2><span>about</span> GameStation</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tenetur illum minus aliquid vel inventore. Quibusdam officiis,
+                vero corporis labore inventore vitae doloribus doloremque
+                ratione soluta beatae perferendis voluptas sunt nulla! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Natus odiome
+                nostrum doloremque! Dolorum, accusamus quo?
+              </p>
+            </section>
+            <div class="pic-gameStation">
+              <img src="images/photo-2.jpg" alt="GameStation" />
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="down-page">
+        <div class="container">
+          <div class="wrapper">
+            <div class="arrows">
+              <i class="fa fa-arrow-up"></i>
+              <i class="fa fa-arrow-down"></i>
+            </div>
+            <div class="box-people">
+              <div class="box-person">
+                <div class="box-img">
+                  <img src="images/person-2.jpg" alt="person-2" />
+                </div>
+                <div class="title-person">
+                  <h2>behnoosh</h2>
+                  <h4>web developer</h4>
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro iusto dolorem consequatur dicta quae eos fugit. Atque
+                  repellendus laboriosam ipsum dolor nostrum sed fuga aliquid
+                  incidunt. Eum libero laborum neque!
+                </p>
+              </div>
+              <div class="box-person">
+                <div class="box-img">
+                  <img src="images/person-1.jpg" alt="person-1" />
+                </div>
+                <div class="title-person">
+                  <h2>star</h2>
+                  <h4>web developer</h4>
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro iusto dolorem consequatur dicta quae eos fugit. Atque
+                  repellendus laboriosam ipsum dolor nostrum sed fuga aliquid
+                  incidunt. Eum libero laborum neque!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <ul class="boxes-footer">
+          <li class="box-footer">
+            <i class="fa fa-location-arrow"></i>
+            <address>Iran-Tehran</address>
+          </li>
+          <li class="box-footer">
+            <i class="fa fa-phone"></i>
+            <div>0912-6931513</div>
+          </li>
+          <li class="box-footer">
+            <i class="fab fa-whatsapp"></i>
+            <div>Beh</div>
+          </li>
+          <li class="box-footer">
+            <i class="fab fa-github"></i>
+            <div>BehStar</div>
+          </li>
+        </ul>
+      </div>
+      <div class="copy-right">
+        <p>Designed by Behnoosh Setareh 2023 &copy; copy right</p>
+      </div>
+    </footer>
+    <script src="scripts/athourize.js"></script>
+    <script src="scripts/about-us.js"></script>
+  </body>
+</html>

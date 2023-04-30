@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+:root {
+  --primary-color: dodgerblue;
+  --white-font: white;
+}
+/* main------------------------------------------------------ */
+main {
+  width: 100%;
+}
+.up-page {
+  width: 100%;
+  height: 200px;
+}
+.up-page .container {
+  width: 100%;
+  height: 100%;
+}
+.description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-gameStation {
+  width: 70%;
+  height: 100%;
+}
+.title-gameStation h2 {
+  font-size: 2em;
+  padding: 10px 0;
+  font-weight: bolder;
+}
+.title-gameStation h2 span {
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+.title-gameStation p {
+  font-size: 1em;
+  line-height: 1.7em;
+}
+.pic-gameStation {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pic-gameStation img {
+  width: 60%;
+  height: 45%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ============================================================= */
+/* DOWNPAGE */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.down-page {
+  width: 100%;
+  height: 500px;
+  background: url(/images/showCase.jpg) center no-repeat;
+  background-size: cover;
+}
+.wrapper {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper::before {
+  content: "";
+  width: 100px;
+  height: 120px;
+  background-color: lightgray;
+  position: absolute;
+  top: -5%;
+  left: 0;
+  clip-path: circle(50% at 30% 30%);
+}
+.wrapper::after {
+  content: "";
+  width: 10%;
+  height: 100%;
+  background-color: lightgray;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.fa-arrow-down,
+.fa-arrow-up {
+  position: absolute;
+  right: 2%;
+  cursor: pointer;
+  z-index: 1;
+  background-color: dodgerBlue;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.fa-arrow-up {
+  top: 10%;
+}
+.fa-arrow-down {
+  bottom: 10%;
+}
+
+.fa-arrow-down:hover,
+.fa-arrow-up:hover {
+  color: lightgray;
+}
+
+.box-people {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: 0.3s;
+}
+/* -------------------------------------------------------- */
+.box-person {
+  width: 500px;
+  height: 300px;
+  border: 1px solid white;
+  position: relative;
+}
+.box-img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 7%;
+  left: 10%;
+}
+.box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
+}
+.title-person {
+  width: 70%;
+  height: 50px;
+  position: absolute;
+  top: 20%;
+  left: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title-person h4 {
+  font-variant: small-caps;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.box-person p {
+  width: 90%;
+  height: 40%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0 10px;
+  color: darkgray;
+}
+@media (max-width: 768px) {
+  .up-page {
+    height: 265px;
+  }
+  .title-gameStation {
+    padding-left: 20px;
+  }
+  .title-gameStation h2 {
+    font-size: 1.5em;
+  }
+  .title-gameStation p {
+    font-size: 0.9em;
+  }
+  .pic-gameStation {
+    padding: 0 10px;
+  }
+  .pic-gameStation img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .up-page {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .up-page {
+    padding: 0 20px;
+  }
+}

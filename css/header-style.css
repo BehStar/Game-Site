@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+:root {
+  --primary-color: dodgerblue;
+  --white-font: white;
+}
+/* HEADER===================== */
+header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(3, 3, 3);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-header {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+.logo-header a {
+  width: 100%;
+  height: 100%;
+  color: var(--white-font);
+  transition: 0.3s;
+  font-size: 40px;
+}
+.logo-header:hover a {
+  transition: 0.3s;
+  color: var(--primary-color);
+}
+/* MenuHEADER */
+.menu-header {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-header li {
+  width: 25%;
+  height: 100%;
+  transition: 0.3s;
+}
+.menu-header li .fa-user {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--white-font);
+}
+.menu-header .user-exist {
+  width: 100%;
+  height: 100%;
+  color: var(--white-font);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+.menu-header li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-font);
+  transition: 0.3s;
+}
+.menu-header li:hover {
+  background-color: var(--primary-color);
+}
+/* User PAGE----------------------------------------------------------- */
+.user-page {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.user-page .box-form {
+  width: 400px;
+  height: 70%;
+  background: linear-gradient(to right, dodgerblue, rgba(255, 255, 255));
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.user-page .box-form .select-kind {
+  width: 50%;
+  height: 60px;
+  background-color: lightgray;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+.select-kind .btn {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, black, dodgerblue);
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.select-kind .login-btn {
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  z-index: 1;
+}
+.select-kind .register-btn {
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.select-kind .selected-btn {
+  z-index: 1;
+}
+/* socials */
+.social-icons {
+  padding: 20px;
+}
+.social-icons i {
+  padding: 0 20px;
+  font-size: 35px;
+}
+
+/* =================================================form */
+.login-form,
+.registery-form {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.login-form > input,
+.registery-form > input {
+  width: 90%;
+  height: 17%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin: 0.8em 0;
+}
+.login-form input::placeholder,
+.registery-form::placeholder {
+  color: darkgray;
+}
+.login-form .check-row,
+.registery-form .check-row {
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  margin: 0.8em 0;
+  align-items: center;
+}
+.login-form .check-row label,
+.registery-form .check-row label {
+  padding: 0 10px;
+}
+.btn-login,
+.btn-register {
+  width: 90%;
+  height: 40px;
+  background-color: black;
+  color: var(--white-font);
+  transition: 0.3s;
+}
+.btn-login:hover,
+.btn-register:hover {
+  color: var(--primary-color);
+}
+.btn-clicked {
+  font-style: italic;
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+/* registery form ============================= */
+.registery-form {
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  transition: 0.3s;
+}
+.login-form {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .logo-header {
+    width: 30%;
+    height: 100%;
+    margin: 0 20px;
+  }
+  .logo-header a {
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .menu-header {
+    width: 60%;
+  }
+  .menu-header li a,
+  .menu-header li i {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo-header {
+    padding: 0 20px;
+  }
+  .menu-header {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .logo-header {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+:root {
+  --primary-color: dodgerblue;
+  --white-font: white;
+}
+/* -------------------------------------------- */
+main {
+  width: 100%;
+}
+main form {
+  padding: 10px 0;
+  background-color: rgba(30, 143, 255, 0.1);
+  margin: 20px;
+  border-radius: 5px;
+}
+.title-contact {
+  color: var(--primary-color);
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 3em;
+}
+.title-contact span {
+  color: black;
+}
+.fill-form {
+  padding: 20px;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+
+  font-weight: bold;
+}
+.box-inp {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.box-inp label {
+  width: 100%;
+  height: 40%;
+}
+.box-inp input {
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  padding: 0 10px;
+}
+.box-inp input::placeholder {
+  color: var(--primary-color);
+}
+
+.box-text {
+  width: 100%;
+  height: 150px;
+  padding: 0 20px;
+}
+.box-text label {
+  width: 100%;
+  height: 40px;
+}
+.box-text .message-inp {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  border: 1px solid black;
+  outline: none;
+}
+.box-text .message-inp::placeholder {
+  color: var(--primary-color);
+}
+.submit {
+  background-color: black;
+  color: var(--white-font);
+  margin-left: 20px;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.submit:hover {
+  color: var(--primary-color);
+}
+/* ====================== */
+.sent-messages {
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+.title-message {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.title-message .count-messages {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--primary-color);
+}
+.sent-messages li {
+  height: 40px;
+  border-bottom: 1px solid var(--primary-color);
+  position: relative;
+  overflow: hidden;
+}
+.sent-messages li:last-child {
+  border-bottom: none;
+}
+.sent-messages li .remove-li {
+  width: 30px;
+  height: 100%;
+  color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+.sent-messages li .remove-li:hover {
+  transform: translate(0%, -50%) rotate(5deg) scale(1.2);
+  background-color: rgba(30, 143, 255, 0.1);
+}
+.sent-messages li .username-message {
+  width: 100px;
+  height: 100%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translate(-0, -50%);
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 5px 0;
+}
+.sent-messages li .username-message span {
+  color: var(--primary-color);
+  padding: 0 3px;
+  font-weight: bold;
+}
+.sent-messages li .user-message {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 130px;
+}
